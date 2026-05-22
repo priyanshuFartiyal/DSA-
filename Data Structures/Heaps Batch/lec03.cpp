@@ -13,13 +13,13 @@ class Heap{
         vec.push_back(val);
 
         // fix the heap if required
-        int x = vec.size()-1 ;
-        int parI = (x-1)/2 ;
+        int chdI = vec.size()-1 ;
+        int parI = (chdI-1)/2 ;
 
-        while(parI >= 0 && vec[parI] < vec[x]){
-            swap(vec[x] , vec[parI]) ;
-            x = parI ;
-            parI = (x-1)/2 ;
+        while(parI >= 0 && vec[parI] < vec[chdI]){
+            swap(vec[chdI] , vec[parI]) ;
+            chdI = parI ;
+            parI = (chdI-1)/2 ;
         }
     }
 

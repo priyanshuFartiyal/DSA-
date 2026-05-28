@@ -48,3 +48,6 @@ int main(){
     nearbyCars(pos , K) ;
 
 }
+
+// Based on this techniques i solved some leetcode questions 
+// Q. 973 , 658 , 251 , 347 (all medium level)
